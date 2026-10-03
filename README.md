@@ -10,12 +10,15 @@ Full portfolio, with write-ups, architecture, and results: https://payet-ai-port
 
 | Folder | What it is | Stack |
 |---|---|---|
-| `market-research-mcp/` | An MCP server exposing market-research tools (company overview, competitors, pricing, news) to any MCP-compatible AI client. | FastMCP, Tavily |
+| `rag-pdf-qa/` | Ask a question about a stack of PDFs and get an answer with the exact page it came from. | LangChain, FAISS, Gemini |
+| `agentic-rag-router/` | Decides where each question should be answered from (your documents, a live web search, or the model itself) before answering. | CrewAI, Gemini, FAISS, Tavily |
+| `crewai-research-crew/` | Two agents work as a team: one researches a topic on the live web, the other writes it up as a brief. | CrewAI, Tavily, Azure OpenAI |
+| `crewai-serial-parallel/` | Two ways to make agents work together: in sequence when one needs the other's output, or in parallel when they don't. | CrewAI, Tavily, Azure OpenAI |
+| `self-debugging-code-chain/` | The model writes a small program, writes its own tests, runs them, and fixes its own bugs until they pass. | Google Gemini, unittest |
+| `market-research-mcp/` | An MCP server exposing market-research tools (company overview, competitors, pricing, news) to any MCP client. | FastMCP, Tavily |
 | `autogen-doc-compliance/` | A multi-agent system (scanner, compliance checker, coordinator) that reviews policy documents and assigns fixes. | Microsoft AutoGen, Claude |
 | `format-negotiation/` | A dependency-free demo of two systems negotiating a shared data format, converting or failing safely. | Python stdlib |
 
-More demos are being added to this collection.
-
 ## Running a demo
 
-Each folder has its own README and, where needed, a `requirements.txt` and `.env.example`. API keys are read from a local `.env` file and are never committed to the repo.
+Each folder has its own README and, where needed, a `requirements.txt` and `.env.example`. The notebook demos open in Jupyter or VS Code. API keys are read from a local `.env` file and are never committed to the repo.

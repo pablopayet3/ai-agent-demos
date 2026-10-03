@@ -1,0 +1,5 @@
+crewai
+langchain-google-genai
+faiss-cpu
+tavily-python
+python-dotenv
