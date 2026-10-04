@@ -17,6 +17,7 @@ Full portfolio, with write-ups, architecture, and results: https://payet-ai-port
 | `self-debugging-code-chain/` | The model writes a small program, writes its own tests, runs them, and fixes its own bugs until they pass. | Google Gemini, unittest |
 | `market-research-mcp/` | An MCP server exposing market-research tools (company overview, competitors, pricing, news) to any MCP client. | FastMCP, Tavily |
 | `autogen-doc-compliance/` | A multi-agent system (scanner, compliance checker, coordinator) that reviews policy documents and assigns fixes. | Microsoft AutoGen, Claude |
+| `linkedin-content-pipeline/` | A FastAPI service where three AutoGen agents write a brand's LinkedIn post (ideas, draft with a confidence score, hashtags) for an n8n workflow with a human approval gate. | AutoGen, FastAPI, Azure OpenAI |
 | `format-negotiation/` | A dependency-free demo of two systems negotiating a shared data format, converting or failing safely. | Python stdlib |
 
 ## Running a demo
