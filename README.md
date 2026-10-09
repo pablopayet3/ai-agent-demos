@@ -18,6 +18,7 @@ Full portfolio, with write-ups, architecture, and results: https://payet-ai-port
 | `market-research-mcp/` | An MCP server exposing market-research tools (company overview, competitors, pricing, news) to any MCP client. | FastMCP, Tavily |
 | `autogen-doc-compliance/` | A multi-agent system (scanner, compliance checker, coordinator) that reviews policy documents and assigns fixes. | Microsoft AutoGen, Claude |
 | `linkedin-content-pipeline/` | A FastAPI service where three AutoGen agents write a brand's LinkedIn post (ideas, draft with a confidence score, hashtags) for an n8n workflow with a human approval gate. | AutoGen, FastAPI, Azure OpenAI |
+| `prompt-ab-test/` | The same request worded four ways and sent to the same model, every call traced in LangSmith; one wording made the model skip the task. | LangChain, LangSmith, Gemini |
 | `format-negotiation/` | A dependency-free demo of two systems negotiating a shared data format, converting or failing safely. | Python stdlib |
 
 ## Running a demo
